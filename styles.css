@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 .section1 {
@@ -26,7 +27,11 @@
 
     box-sizing: border-box;
 
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -426px;
     width: 857px;
     height: 457px;
 
@@ -35,8 +40,26 @@
     border-radius: 2px;
 }
 
-/* -74left & +20top */
-/* Block 1 */
+.player {
+    /* player 1 */
+
+
+    position: absolute;
+    width: 118px;
+    height: 32px;
+    left: calc(50% - 118px/2 + 16px);
+    top: calc(50% - 32px/2 + 3px);
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+
 .name-container {
     /* Section 2 */
 
@@ -68,7 +91,6 @@
     top: 27px;
 
     background: #4285F4;
-    opacity: 0.6;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 2px;
 }
@@ -83,6 +105,97 @@
     transform: rotate(90deg);
 
 }
+
+.points-ellipse {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 372px;
+    top: 34px;
+    z-index: 1;
+
+    background-color: var(--white);
+    border-radius: 30px;
+}
+
+.games-ellipse {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 476px;
+    top: 34px;
+    z-index: 1;
+
+    background-color: var(--white);
+    border-radius: 30px;
+}
+
+.vertical-line {
+    position: absolute;
+    width: 80px;
+    height: 0px;
+    left: 410px;
+    top: 57px;
+    z-index: 1;
+
+    mix-blend-mode: normal;
+    border: 2px solid #FFFFFF;
+    transform: rotate(-59.3deg);
+}
+
+.point-button {
+    position: absolute;
+    width: 52px;
+    height: 32px;
+    left: 769px;
+    top: 43px;
+
+    background: var(--sky-blue);
+    mix-blend-mode: normal;
+    border-radius: 7px;
+    border: solid var(--white);
+}
+
+.point-button-number {
+    z-index: 1;
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    left: 801px;
+    top: 52px;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.button-plus-line {
+    position: absolute;
+    width: 17px;
+    height: 0px;
+    top: 13px;
+    right: 25px;
+
+
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+    transform: rotate(180deg);
+    /* 90deg the vertical */
+}
+
+#score-container1 {
+    opacity: 0.6;
+}
+
+/* -74left & +78top */
+/* Block 1 */
 
 #line1 {
     /* Line 1 */
@@ -108,23 +221,47 @@
     top: 58px;
 }
 
-.player {
-    /* player 1 */
+#pointsP {
+    /* 14 */
 
 
     position: absolute;
-    width: 118px;
-    height: 32px;
-    left: calc(50% - 118px/2 + 16px);
-    top: calc(50% - 32px/2 + 3px);
+    width: 24px;
+    height: 24px;
+    left: 13px;
+    top: 14px;
 
-    font-family: 'Inter';
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
 
-    color: #FFFFFF;
+    color: #0E0E0E;
+    font-weight: bold;
+}
+
+#matchsP {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 13px;
+    top: 14px;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #0E0E0E;
+    font-weight: bold;
+
+}
+
+#vertical-line {
+    transform: rotate(90deg);
 }
 
 /* Block 1 end */
@@ -138,6 +275,7 @@
 #score-container2 {
     left: 312px;
     top: 111px;
+    opacity: 0.6;
 }
 
 #line5 {
@@ -171,6 +309,7 @@
 #score-container3 {
     left: 312px;
     top: 195px;
+    opacity: 0.6;
 }
 
 #line9 {
@@ -204,6 +343,7 @@
 #score-container4 {
     left: 312px;
     top: 279px;
+    opacity: 0.6;
 }
 
 #line13 {
@@ -237,6 +377,7 @@
 #score-container5 {
     left: 312px;
     top: 363px;
+    opacity: 0.6;
 }
 
 #line17 {
