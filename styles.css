@@ -260,8 +260,24 @@
 
 }
 
-#vertical-line {
+#vertical-line3 {
     transform: rotate(90deg);
+}
+
+#number-2 {
+top: 0px;
+}
+
+#vertical-line2 {
+
+}
+
+#horizontal-line2 {
+
+}
+
+#point-button-2 {
+
 }
 
 /* Block 1 end */
