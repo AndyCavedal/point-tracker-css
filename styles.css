@@ -134,7 +134,7 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    left: 476px;
+    left: 471px;
     top: 34px;
     z-index: 1;
 
@@ -160,7 +160,7 @@
     width: 40px;
     height: 40px;
     position: absolute;
-    left: -156px;
+    left: -153px;
     top: 5px;
 }
 
@@ -177,14 +177,20 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.point-button:hover {
+    box-shadow: 0 1.5px 4px rgba(0,0,0,0.4);
+  }
+
+
 
 .point-button-number {
-    z-index: 1;
     position: absolute;
+    z-index: 1;
     width: 18px;
     height: 16px;
     left: 801px;
     top: 52px;
+    pointer-events: none;
     
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
