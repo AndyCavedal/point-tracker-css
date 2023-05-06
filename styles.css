@@ -190,7 +190,6 @@
     height: 16px;
     left: 801px;
     top: 52px;
-    pointer-events: none;
     
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
@@ -202,6 +201,7 @@
     
     color: #FFFFFF;
     font-weight: bold;
+    pointer-events: none;
 }
 
 .point-button-number:hover {
